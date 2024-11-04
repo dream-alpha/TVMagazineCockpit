@@ -1,0 +1,8 @@
+	<screen name="EventDetails" position="center,110" size="1800,930">
+		<widget name="channelpix" position="20,20" size="100,100"/>
+		<widget font="Regular;32" name="title" position="150,20" size="1630,43" valign="center" zPosition="1"/>
+		<widget font="Regular;28" name="episodetitle" position="150,75" size="1630,37" valign="center" zPosition="1"/>
+		<widget font="Regular;28" name="timeduration" position="150,120" size="300,37" valign="center" zPosition="1"/>
+		<widget font="Regular;26" name="description" position="20,180" size="1230,520"/>
+		<xmlinc file="screenpart_EventDetailsPics" position="1270,180"/>
+	</screen>

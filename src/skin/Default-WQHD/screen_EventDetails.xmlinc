@@ -1,0 +1,10 @@
+	<screen flags="wfNoBorder" name="EventDetails" position="center,center" size="2400,1240">
+		<xmlinc file="screenpart_TitleOnly" source="Title"/>
+		<xmlinc file="screenpart_Background"/>
+		<widget name="channelpix" position="27,160" size="133,133"/>
+		<widget font="Regular;43" name="title" position="200,160" size="1467,57" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;37" name="episodetitle" position="200,233" size="1467,49" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;37" name="timeduration" position="200,293" size="400,49" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;35" name="description" position="27,373" size="1640,720" transparent="1"/>
+		<xmlinc file="screenpart_EventDetailsPics" position="1693,160"/>
+	</screen>

@@ -1,0 +1,240 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: TVMagazineCockpit\n"
+"POT-Creation-Date: 2024-07-09 18:46+0200\n"
+"PO-Revision-Date: 2024-07-09 18:48+0200\n"
+"Last-Translator: dream-alpha\n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.4\n"
+"X-Poedit-Basepath: ../src\n"
+"X-Poedit-SearchPath-0: .\n"
+
+msgid "Exit"
+msgstr ""
+
+msgid "TV Bouquets"
+msgstr ""
+
+msgid "Bouquets"
+msgstr ""
+
+msgid "Service Reference"
+msgstr ""
+
+msgid "Favorites"
+msgstr ""
+
+msgid "not found"
+msgstr ""
+
+msgid "Channel Management"
+msgstr ""
+
+msgid "Press OK for channel list"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "name difference"
+msgstr ""
+
+msgid "Bouquet"
+msgstr ""
+
+msgid "Press OK to enable/disable move function or Menu for more options"
+msgstr ""
+
+msgid "Select"
+msgstr ""
+
+msgid "Delete channel"
+msgstr ""
+
+msgid "Delete all channels"
+msgstr ""
+
+msgid "Zap"
+msgstr ""
+
+msgid "Add channel"
+msgstr ""
+
+msgid "Add all channels"
+msgstr ""
+
+msgid "Channels (TV)"
+msgstr ""
+
+msgid "Move mode enabled"
+msgstr ""
+
+msgid "TV Bouquet Channels"
+msgstr ""
+
+msgid "Press OK to add channel, or Menu for more options"
+msgstr ""
+
+msgid "Default"
+msgstr ""
+
+msgid "Sky"
+msgstr ""
+
+msgid "All"
+msgstr ""
+
+msgid "COCKPIT"
+msgstr ""
+
+msgid "Default bouquet"
+msgstr ""
+
+msgid "Select the default bouquet."
+msgstr ""
+
+msgid "Picon directory"
+msgstr ""
+
+msgid "Select the directory the picons are stored in."
+msgstr ""
+
+msgid "Use picons"
+msgstr ""
+
+msgid "Should channel picons be used instead of channel logos?"
+msgstr ""
+
+msgid "DEBUG"
+msgstr ""
+
+msgid "Log level"
+msgstr ""
+
+msgid "Select the debug log level."
+msgstr ""
+
+msgid "default"
+msgstr ""
+
+msgid "favorites"
+msgstr ""
+
+msgid "sky"
+msgstr ""
+
+msgid "all"
+msgstr ""
+
+msgid "Error during download"
+msgstr ""
+
+msgid "Event Details"
+msgstr ""
+
+msgid "min"
+msgstr ""
+
+msgid "Add Timer"
+msgstr ""
+
+msgid "Menu"
+msgstr ""
+
+msgid "Input"
+msgstr ""
+
+msgid "Bouquet Selection"
+msgstr ""
+
+msgid "Bouquet Setup"
+msgstr ""
+
+msgid "Settings"
+msgstr ""
+
+msgid "About"
+msgstr ""
+
+msgid "More"
+msgstr ""
+
+msgid "20:15"
+msgstr ""
+
+msgid "22:00"
+msgstr ""
+
+msgid "Now"
+msgstr ""
+
+msgid "column view"
+msgstr ""
+
+msgid "Loading..."
+msgstr ""
+
+msgid "Page"
+msgstr ""
+
+msgid "Services"
+msgstr ""
+
+msgid "Browse TV Magazine"
+msgstr ""
+
+msgid "TVMagazineCockpit"
+msgstr ""
+
+msgid "TVMagazine Event Infos"
+msgstr ""
+
+msgid "TVMagazineCockpit Event Infos"
+msgstr ""
+
+msgid "Plugin"
+msgstr ""
+
+msgid "Version"
+msgstr ""
+
+msgid "Copyright"
+msgstr ""
+
+msgid "License"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Defaults"
+msgstr ""
+
+msgid "Setup"
+msgstr ""
+
+msgid "Really close without saving settings?"
+msgstr ""
+
+msgid "Loading default settings will overwrite all settings, really load them?"
+msgstr ""
+
+msgid "Some changes require a GUI restart"
+msgstr ""
+
+msgid "Restart GUI now?"
+msgstr ""
+
+msgid "Bookmarks"
+msgstr ""
+
+msgid "Select directory"
+msgstr ""
+
+msgid "Path does not exist"
+msgstr ""

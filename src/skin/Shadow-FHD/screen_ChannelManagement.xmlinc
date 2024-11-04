@@ -1,0 +1,37 @@
+	<screen flags="wfNoBorder" name="ChannelManagement" position="center,center" size="1800,930">
+		<xmlinc file="screenpart_TitleOnly" source="Title"/>
+		<xmlinc file="screenpart_Background"/>
+		<widget backgroundColor="background" font="Regular;25" name="mytitle1" position="5,120" size="300,40" zPosition="1"/>
+		<widget backgroundColor="background" font="Regular;25" name="mytitle2" position="360,120" size="300,40" zPosition="1"/>
+		<widget backgroundColor="background" font="Regular;25" name="mytitle3" position="720,120" size="300,40" zPosition="1"/>
+		<widget backgroundColor="background" font="Regular;25" name="mytitle4" position="1080,120" size="300,40" zPosition="1"/>
+		<widget backgroundColor="background" font="Regular;25" name="mytitle5" position="1440,120" size="300,40" zPosition="1"/>
+		<eLabel backgroundColor="grey" position="10,160" size="1780,1"/>
+		<widget enableWrapAround="1" position="10,160" render="Listbox" scrollbarMode="showOnDemand" size="1780,600" source="list" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"templates":
+				{"default":(40,[
+				MultiContentEntryText(pos=(5,0),size=(1000,40),font=0,flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER,text=0),
+				MultiContentEntryText(pos=(500,0),size=(500,40),font=0,flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER,text=1,color=0xa0a0a0),
+				]),
+				"channel_bouquet":(40,[
+				MultiContentEntryText(pos=(5,0),size=(350,40),font=0,flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER,text=0, backcolor=None),
+				MultiContentEntryText(pos=(360,0),size=(350,40),font=0,flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER,text=1, backcolor=None),
+				MultiContentEntryText(pos=(720,0),size=(350,40),font=0,flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER,text=2, backcolor=None),
+				MultiContentEntryText(pos=(1080,0),size=(350,40),font=1,flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER,text=3, backcolor=None),
+				MultiContentEntryText(pos=(1440,0),size=(350,40),font=0,flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER,text=4, backcolor=None),
+				MultiContentEntryText(pos=(355,0),size=(1,40),font=0,flags=RT_VALIGN_CENTER,text="", backcolor=0xa0a0a0),
+				MultiContentEntryText(pos=(715,0),size=(1,40),font=0,flags=RT_VALIGN_CENTER,text="", backcolor=0xa0a0a0),
+				MultiContentEntryText(pos=(1075,0),size=(1,40),font=0,flags=RT_VALIGN_CENTER,text="", backcolor=0xa0a0a0),
+				MultiContentEntryText(pos=(1435,0),size=(1,40),font=0,flags=RT_VALIGN_CENTER,text="", backcolor=0xa0a0a0),
+				])
+				},
+				"fonts": [gFont("Regular",25),gFont("Regular",20)],
+				"itemHeight": 40
+				}
+			</convert>
+		</widget>
+		<eLabel backgroundColor="grey" position="10,790" size="1780,1"/>
+		<widget backgroundColor="background" font="Regular;25" halign="center" name="message" position="10,815" size="1780,30" transparent="0" valign="center"/>
+		<xmlinc file="screenpart_4Buttons_source" position="0,eval($screen_height-50)" width="eval($screen_width/$4)"/>
+	</screen>

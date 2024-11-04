@@ -1,0 +1,6 @@
+	<widget enableWrapAround="1" name="list0" position="0,0" scrollbarMode="showNever" size="eval($screen_width/$6),700" transparent="1"/>
+	<widget enableWrapAround="1" name="list1" position="eval($screen_width/$6),0" scrollbarMode="showNever" size="eval($screen_width/$6),700" transparent="1"/>
+	<widget enableWrapAround="1" name="list2" position="eval($2*($screen_width/$6)),0" scrollbarMode="showNever" size="eval($screen_width/$6),700" transparent="1"/>
+	<widget enableWrapAround="1" name="list3" position="eval($3*($screen_width/$6)),0" scrollbarMode="showNever" size="eval($screen_width/$6),700" transparent="1"/>
+	<widget enableWrapAround="1" name="list4" position="eval($4*($screen_width/$6)),0" scrollbarMode="showNever" size="eval($screen_width/$6),700" transparent="1"/>
+	<widget enableWrapAround="1" name="list5" position="eval($5*($screen_width/$6)),0" scrollbarMode="showNever" size="eval($screen_width/$6),700" transparent="1"/>
