@@ -1,7 +1,7 @@
 # !/usr/bin/python
 # coding=utf-8
 #
-# Copyright (C) 2018-2024 by dream-alpha
+# Copyright (C) 2018-2025 by dream-alpha
 #
 # In case of reuse of this source code please do not remove this copyright.
 #
@@ -19,32 +19,42 @@
 # <http://www.gnu.org/licenses/>.
 
 
-from Screens.ChoiceBox import ChoiceBox
 from Components.config import config
+from Components.UsageConfig import preferredTimerPath
+from RecordTimer import RecordTimerEntry
+from Screens.TimerEdit import TimerSanityConflict
+from Screens.TimerEntry import TimerEntry
+from Screens.ChoiceBox import ChoiceBox
+from enigma import eServiceReference
+from ServiceReference import ServiceReference
 from .__init__ import _
 from .Debug import logger
-from .ConfigScreen import ConfigScreen
-from .ChannelManagement import ChannelManagement
-from .ConfigInit import bouquet_choices
-from .About import about
 from .Version import PLUGIN
+from .ZapUtils import zapService
+from .Constants import EVENT_IDX_TIME_START, EVENT_IDX_TIME_END, EVENT_IDX_TITLE, EVENT_IDX_GENRE
+from .PluginUtils import getPlugin, WHERE_MEDIATHEK_SEARCH, WHERE_TMDB_MOVIELIST
+from .ServiceUtils import getService
 
 
 class More():
 	def __init__(self):
 		logger.info("...")
+		self.mediathek_plugin = getPlugin(WHERE_MEDIATHEK_SEARCH)
+		self.tmdb_plugin = getPlugin(WHERE_TMDB_MOVIELIST)
 
-	def openMore(self, bouquet, channel_list, channel_dict):
-		logger.info("...")
-		self.bouquet = bouquet
-		self.channel_list = channel_list
-		self.channel_dict = channel_dict
+	def openMore(self, service, event):
+		logger.info("service: %s", service)
+		logger.info("event: %s", event)
+		self.service = service
+		self.event = event
 		alist = [
-			("%s" % _("Bouquet Selection"), "bouquetselection"),
-			("%s" % _("Bouquet Setup"), "channel"),
-			("%s" % _("Settings"), "settings"),
-			("%s" % _("About"), "about"),
+			("%s" % _("Zap"), "zap"),
+			("%s" % _("Add Timer"), "timer"),
 		]
+		if self.mediathek_plugin:
+			alist.append(("%s" % self.mediathek_plugin.description, "mediathek_search"))
+		if self.tmdb_plugin:
+			alist.append(("%s" % self.tmdb_plugin.description, "tmdb_search"))
 
 		self.session.openWithCallback(
 			self.openMoreCallback,
@@ -59,47 +69,34 @@ class More():
 	def openMoreCallback(self, answer=None):
 		logger.info("...")
 		if answer:
-			screen = answer[1]
-			if screen == "channel":
-				self.session.openWithCallback(
-					self.openChannelManagementCallback,
-					ChannelManagement,
-					self.bouquet,
-					self.channel_list,
-					self.channel_dict,
-				)
-			elif screen == "settings":
-				self.session.openWithCallback(
-					self.openConfigScreenCallback,
-					ConfigScreen,
-					config.plugins.tvmagazinecockpit
-				)
-			elif screen == "bouquetselection":
-				alist = [(value[1], value[0]) for value in bouquet_choices]
-				self.session.openWithCallback(
-					self.openBouquetSelectionCallback,
-					ChoiceBox,
-					title="Bouquet Selection",
-					list=alist,
-					windowTitle=_("Bouquet Selection"),
-					allow_cancel=True,
-					titlebartext=_("Input")
-				)
-			elif screen == "about":
-				about(self.session)
+			action = answer[1]
+			if action == "zap":
+				zapService(self.service)
+				self.close()
+			elif action == "timer":
+				serviceref = ServiceReference(eServiceReference(self.service))
+				begin = int(self.event[EVENT_IDX_TIME_START]) - config.recording.margin_before.value * 60
+				end = int(self.event[EVENT_IDX_TIME_END]) + config.recording.margin_after.value * 60
+				eventdata = (begin, end, self.event[EVENT_IDX_TITLE], self.event[EVENT_IDX_GENRE], None)
+				newEntry = RecordTimerEntry(serviceref, checkOldTimers=True, dirname=preferredTimerPath(), *eventdata)
+				self.session.openWithCallback(self.finishedAdd, TimerEntry, newEntry)
+			elif action == "mediathek_search":
+				self.mediathek_plugin(self.session, self.event[EVENT_IDX_TITLE])
+			elif action == "tmdb_search":
+				service = getService("", self.event[EVENT_IDX_TITLE])
+				self.tmdb_plugin(self.session, service)
 
-	def openConfigScreenCallback(self, _result=None):
+	def finishedAdd(self, answer):
 		logger.info("...")
-		self.reload()
-
-	def openChannelManagementCallback(self, channel_list):
-		logger.info("...")
-		self.channel_list = channel_list
-		self.reload()
-
-	def openBouquetSelectionCallback(self, bouquet):
-		logger.info("bouquet: %s", bouquet)
-		if bouquet:
-			config.plugins.tvmagazinecockpit.bouquet.value = bouquet[1]
-			config.plugins.tvmagazinecockpit.bouquet.save()
-			self.close("programcolumns")
+		if answer[0]:
+			entry = answer[1]
+			simulTimerList = self.session.nav.RecordTimer.record(entry)
+			if simulTimerList is not None:
+				for x in simulTimerList:
+					if x.setAutoincreaseEnd(entry):
+						self.session.nav.RecordTimer.timeChanged(x)
+				simulTimerList = self.session.nav.RecordTimer.record(entry)
+				if simulTimerList is not None:
+					self.session.openWithCallback(self.finishedAdd, TimerSanityConflict, simulTimerList)
+		else:
+			logger.debug("Timeredit aborted")

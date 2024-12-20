@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # coding=utf-8
 #
-# Copyright (C) 2018-2024 by dream-alpha
+# Copyright (C) 2018-2025 by dream-alpha
 #
 # In case of reuse of this source code please do not remove this copyright.
 #
@@ -45,8 +45,8 @@ ALL_VIDEO = EXT_TS + EXT_M2TS + EXT_DVD + EXT_VIDEO + EXT_BLU
 ALL_MEDIA = ALL_VIDEO + EXT_PICTURE + EXT_MUSIC + EXT_PLAYLIST
 
 
-DEFAULT_VIDEO_PID = 0x44
-DEFAULT_AUDIO_PID = 0x45
+# DEFAULT_VIDEO_PID = 0x44
+# DEFAULT_AUDIO_PID = 0x45
 
 
 def getService(path, name=""):
@@ -60,8 +60,8 @@ def getService(path, name=""):
 		service = eServiceReference(SID_M2TS, 0, path)
 	else:
 		service = eServiceReference(SID_GST, 0, path)
-		service.setData(0, DEFAULT_VIDEO_PID)
-		service.setData(1, DEFAULT_AUDIO_PID)
+		# service.setData(0, DEFAULT_VIDEO_PID)
+		# service.setData(1, DEFAULT_AUDIO_PID)
 	service.setName(name)
 	return service
 

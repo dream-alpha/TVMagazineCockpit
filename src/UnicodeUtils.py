@@ -1,4 +1,4 @@
-# !/usr/bin/python
+#!/usr/bin/python
 # coding=utf-8
 #
 # Copyright (C) 2018-2025 by dream-alpha
@@ -19,13 +19,32 @@
 # <http://www.gnu.org/licenses/>.
 
 
-from Screens.Screen import Screen
+from six import text_type
 from .Debug import logger
 
 
-class Search(Screen):
-	def __init__(self, session, query):
-		logger.info("query: %s", query)
-		Screen.__init__(self, session)
+def convertToUtf8(text, codepage="utf-8"):
+	if text:
+		try:
+			text.decode(codepage)
+		except UnicodeDecodeError:
+			try:
+				text = text.decode("cp1252")
+			except UnicodeDecodeError:
+				text = text.decode("iso-8859-1")
+		if codepage != "utf-8":
+			try:
+				text = text.encode("utf-8")
+			except UnicodeDecodeError as e:
+				logger.error("exception: %s", e)
+	return text.strip()
 
-	# let"s do it...
+
+def convertUni2Str(data):
+	if isinstance(data, dict):
+		return {convertUni2Str(key): convertUni2Str(value) for key, value in data.iteritems()}
+	if isinstance(data, list):
+		return [convertUni2Str(element) for element in data]
+	if isinstance(data, text_type):
+		return data.encode("utf-8")
+	return data

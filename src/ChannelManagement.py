@@ -1,7 +1,7 @@
 # !/usr/bin/python
 # coding=utf-8
 #
-# Copyright (C) 2018-2024 by dream-alpha
+# Copyright (C) 2018-2025 by dream-alpha
 #
 # In case of reuse of this source code please do not remove this copyright.
 #
@@ -34,9 +34,9 @@ from Tools.Directories import resolveFilename, SCOPE_CONFIG
 from .__init__ import _
 from .MyList import MyList
 from .Debug import logger
-from .ChannelUtils import write_channel_list, getChannel
+from .ChannelUtils import writeChannelList, getChannel
 from .Constants import TVS
-from .ZapUtils import Zap_Service
+from .ZapUtils import zapService
 
 
 class ChannelManagement(Screen):
@@ -139,7 +139,7 @@ class ChannelManagement(Screen):
 			bouquet_channel_list = self["list"].getList()
 			for list_element in bouquet_channel_list:
 				channel_list.append(list_element[5])
-			write_channel_list(self.bouquet, channel_list)
+			writeChannelList(self.bouquet, channel_list)
 			logger.debug("channel_list: %s", channel_list)
 			self.close(channel_list)
 
@@ -238,7 +238,7 @@ class ChannelManagement(Screen):
 				logger.debug("addall: channel_list: %s", self.channel_list)
 				self.key_blue()
 			elif answer == "zap":
-				Zap_Service(curr[3])
+				zapService(curr[3])
 
 	def addTVChannel(self, curr):
 		name = curr[0]

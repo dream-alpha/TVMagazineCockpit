@@ -1,7 +1,7 @@
 # !/usr/bin/python
 # coding=utf-8
 #
-# Copyright (C) 2018-2024 by dream-alpha
+# Copyright (C) 2018-2025 by dream-alpha
 #
 # In case of reuse of this source code please do not remove this copyright.
 #
@@ -21,6 +21,6 @@
 
 PLUGIN = "TVMagazineCockpit"
 ID = "TVC"
-VERSION = "1.10.5"
-COPYRIGHT = "2018-2024 by dream-alpha"
+VERSION = "2.0.6"
+COPYRIGHT = "2018-2025 by dream-alpha"
 LICENSE = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version."

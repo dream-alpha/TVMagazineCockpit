@@ -1,7 +1,7 @@
 # !/usr/bin/python
 # coding=utf-8
 #
-# Copyright (C) 2018-2024 by dream-alpha
+# Copyright (C) 2018-2025 by dream-alpha
 #
 # In case of reuse of this source code please do not remove this copyright.
 #
@@ -23,7 +23,7 @@ import json
 from .Downloader import headers_gzip, MygetPage, MyDeferredSemaphore
 from .Constants import EVENT_KEYS, EVENT_IDX_VIDEOS, EVENT_IDX_IMAGES, EVENT_LENGTH
 from .Debug import logger
-from .ChannelUtils import convert_unicode_to_str
+from .UnicodeUtils import convertUni2Str
 
 
 class TVSpielfilmData():
@@ -62,7 +62,7 @@ class TVSpielfilmData():
 		if result:
 			if day not in self.events:
 				self.events[day] = {}
-			events = convert_unicode_to_str(json.loads(result))
+			events = convertUni2Str(json.loads(result))
 			self.events[day][channel_id] = self.parseJsonEvents(events)
 		self.callback(self.events, channel, i)
 

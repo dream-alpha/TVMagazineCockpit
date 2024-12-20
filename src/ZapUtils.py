@@ -1,7 +1,7 @@
 # !/usr/bin/python
 # coding=utf-8
 #
-# Copyright (C) 2018-2024 by dream-alpha
+# Copyright (C) 2018-2025 by dream-alpha
 #
 # In case of reuse of this source code please do not remove this copyright.
 #
@@ -25,10 +25,10 @@ from enigma import eServiceCenter, eServiceReference
 from .Debug import logger
 
 
-def Zap_Service(strservice):
-	logger.info("strservice: %s", strservice)
-	if strservice:
-		service = eServiceReference(str(strservice))
+def zapService(service_str):
+	logger.info("service_str: %s", service_str)
+	if service_str:
+		service = eServiceReference(str(service_str))
 		if service:
 			allservice = eServiceReference("%s ORDER BY name" % (service_types_tv))
 			serviceHandler = eServiceCenter.getInstance()
@@ -42,7 +42,7 @@ def Zap_Service(strservice):
 						bouquet = allservice
 						break
 					currlist = serviceHandler.list(bouquet)
-					if (currlist is not None) and (strservice in currlist.getContent("S", True)):
+					if (currlist is not None) and (service_str in currlist.getContent("S", True)):
 						break
 			if InfoBar.instance.servicelist.getRoot() != bouquet:  # already in correct bouquet?
 				InfoBar.instance.servicelist.clearPath()

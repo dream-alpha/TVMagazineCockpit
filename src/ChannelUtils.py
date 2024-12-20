@@ -1,7 +1,7 @@
 # !/usr/bin/python
 # coding=utf-8
 #
-# Copyright (C) 2018-2024 by dream-alpha
+# Copyright (C) 2018-2025 by dream-alpha
 #
 # In case of reuse of this source code please do not remove this copyright.
 #
@@ -21,23 +21,13 @@
 
 import os
 import json
-from six import text_type
 from Tools.Directories import resolveFilename, SCOPE_CONFIG, pathExists
 from .ConfigInit import plugindir
+from .UnicodeUtils import convertUni2Str
 from .Debug import logger
 
 
-def convert_unicode_to_str(input_data):
-	if isinstance(input_data, dict):
-		return {convert_unicode_to_str(key): convert_unicode_to_str(value) for key, value in input_data.iteritems()}
-	if isinstance(input_data, list):
-		return [convert_unicode_to_str(element) for element in input_data]
-	if isinstance(input_data, text_type):
-		return input_data.encode("utf-8")
-	return input_data
-
-
-def read_channel_list(bouquet="default"):
+def readChannelList(bouquet="default"):
 	logger.info("bouquet: %s", bouquet)
 	filename = ""
 	channel_list = []
@@ -52,12 +42,12 @@ def read_channel_list(bouquet="default"):
 	logger.debug("filename: %s", filename)
 	if filename:
 		with open(filename) as data_file:
-			channel_list = convert_unicode_to_str(json.load(data_file))
+			channel_list = convertUni2Str(json.load(data_file))
 	logger.debug("channel_list: %s", channel_list)
 	return channel_list
 
 
-def write_channel_list(bouquet, channel_list):
+def writeChannelList(bouquet, channel_list):
 	logger.info("bouquet: %s", bouquet)
 	channel_list_filename = "tvspielfilm_channel_list_%s.json" % bouquet
 	path = os.path.join(resolveFilename(SCOPE_CONFIG), channel_list_filename)
@@ -65,7 +55,7 @@ def write_channel_list(bouquet, channel_list):
 		json.dump(channel_list, afile, indent=2)
 
 
-def read_channel_dict():
+def readChannelDict():
 	logger.info("...")
 	filename = ""
 	channel_dict = {}
@@ -80,7 +70,7 @@ def read_channel_dict():
 	logger.debug("filename: %s", filename)
 	if filename:
 		with open(filename) as data_file:
-			channel_dict = convert_unicode_to_str(json.load(data_file))
+			channel_dict = convertUni2Str(json.load(data_file))
 	logger.debug("channel_dict: %s", channel_dict)
 	return channel_dict
 

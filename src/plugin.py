@@ -1,7 +1,7 @@
 # !/usr/bin/python
 # coding=utf-8
 #
-# Copyright (C) 2018-2024 by dream-alpha
+# Copyright (C) 2018-2025 by dream-alpha
 #
 # In case of reuse of this source code please do not remove this copyright.
 #
@@ -46,9 +46,9 @@ from .TVMagazineCockpit import TVMagazineCockpit
 # 	Search(session, event_name)
 
 
-def main(session, **kwargs):
+def main(session, **__kwargs):
 	logger.info("...")
-	TVMagazineCockpit(session, **kwargs)
+	session.open(TVMagazineCockpit)
 
 
 def autoStart(reason, **kwargs):
