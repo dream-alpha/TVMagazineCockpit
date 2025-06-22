@@ -1,0 +1,88 @@
+<?xml version="1.0" ?>
+<skin>
+	<screen name="ProgramColumns" position="center,center" size="1200,620">
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/red.svg" position="7,0" scale="stretch" size="200,27"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/green.svg" position="207,0" scale="stretch" size="200,27"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/yellow.svg" position="407,0" scale="stretch" size="200,27"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/blue.svg" position="607,0" scale="stretch" size="200,27"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/key_menu.png" position="813,7" scale="stretch" size="27,13"/>
+		<widget backgroundColor="#9f1313" font="Regular;17" halign="center" position="7,1" render="Label" size="200,27" source="key_red" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="#1f771f" font="Regular;17" halign="center" position="207,1" render="Label" size="200,27" source="key_green" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="#a08500" font="Regular;17" halign="center" position="407,1" render="Label" size="200,27" source="key_yellow" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="#18188b" font="Regular;17" halign="center" position="607,1" render="Label" size="200,27" source="key_blue" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;17" halign="right" name="day_selector" position="953,3" size="233,20" transparent="1" valign="center"/>
+		<widget font="Regular;13" foregroundColor="#a6781c" name="channel0" position="3,27" size="193,15"/>
+		<widget font="Regular;13" foregroundColor="#a6781c" name="channel1" position="203,27" size="193,15"/>
+		<widget font="Regular;13" foregroundColor="#a6781c" name="channel2" position="403,27" size="193,15"/>
+		<widget font="Regular;13" foregroundColor="#a6781c" name="channel3" position="603,27" size="193,15"/>
+		<widget font="Regular;13" foregroundColor="#a6781c" name="channel4" position="803,27" size="193,15"/>
+		<widget font="Regular;13" foregroundColor="#a6781c" name="channel5" position="1003,27" size="193,15"/>
+		<widget font="Regular;10" foregroundColor="#a0a0a0" name="time0" position="3,93" size="27,12"/>
+		<widget font="Regular;10" foregroundColor="#a0a0a0" name="time1" position="200,93" size="27,12"/>
+		<widget font="Regular;10" foregroundColor="#a0a0a0" name="time2" position="400,93" size="27,12"/>
+		<widget font="Regular;10" foregroundColor="#a0a0a0" name="time3" position="600,93" size="27,12"/>
+		<widget font="Regular;10" foregroundColor="#a0a0a0" name="time4" position="800,93" size="27,12"/>
+		<widget font="Regular;10" foregroundColor="#a0a0a0" name="time5" position="1000,93" size="27,12"/>
+		<widget font="Regular;13" foregroundColor="#a6781c" name="description0" position="0,113" size="200,31"/>
+		<widget font="Regular;13" foregroundColor="#a6781c" name="description1" position="200,113" size="133,31"/>
+		<widget font="Regular;13" foregroundColor="#a6781c" name="description2" position="400,113" size="133,31"/>
+		<widget font="Regular;13" foregroundColor="#a6781c" name="description3" position="600,113" size="133,31"/>
+		<widget font="Regular;13" foregroundColor="#a6781c" name="description4" position="800,113" size="133,31"/>
+		<widget font="Regular;13" foregroundColor="#a6781c" name="description5" position="1000,113" size="133,31"/>
+		<widget alphatest="on" name="picon0" position="7,47" size="33,33"/>
+		<widget alphatest="on" name="picon1" position="207,47" size="33,33"/>
+		<widget alphatest="on" name="picon2" position="407,47" size="33,33"/>
+		<widget alphatest="on" name="picon3" position="607,47" size="33,33"/>
+		<widget alphatest="on" name="picon4" position="807,47" size="33,33"/>
+		<widget alphatest="on" name="picon5" position="1007,47" size="33,33"/>
+		<widget alphatest="on" name="programpix0" position="67,43" size="99,66"/>
+		<widget alphatest="on" name="programpix1" position="267,43" size="99,66"/>
+		<widget alphatest="on" name="programpix2" position="467,43" size="99,66"/>
+		<widget alphatest="on" name="programpix3" position="667,43" size="99,66"/>
+		<widget alphatest="on" name="programpix4" position="867,43" size="99,66"/>
+		<widget alphatest="on" name="programpix5" position="1067,43" size="99,66"/>
+		<widget enableWrapAround="1" name="list0" position="0,147" scrollbarMode="showNever" size="200,467" transparent="1"/>
+		<widget enableWrapAround="1" name="list1" position="200,147" scrollbarMode="showNever" size="200,467" transparent="1"/>
+		<widget enableWrapAround="1" name="list2" position="400,147" scrollbarMode="showNever" size="200,467" transparent="1"/>
+		<widget enableWrapAround="1" name="list3" position="600,147" scrollbarMode="showNever" size="200,467" transparent="1"/>
+		<widget enableWrapAround="1" name="list4" position="800,147" scrollbarMode="showNever" size="200,467" transparent="1"/>
+		<widget enableWrapAround="1" name="list5" position="1000,147" scrollbarMode="showNever" size="200,467" transparent="1"/>
+	</screen>
+	<screen name="EventDetails" position="center,73" size="1200,620">
+		<widget name="picon" position="13,13" size="67,67"/>
+		<widget font="Regular;21" name="title" position="100,13" size="1087,29" valign="center" zPosition="1"/>
+		<widget font="Regular;19" name="subtitle" position="100,50" size="1087,25" valign="center" zPosition="1"/>
+		<widget font="Regular;19" name="duration" position="100,80" size="200,25" valign="center" zPosition="1"/>
+		<widget font="Regular;17" name="description" position="13,120" size="820,347"/>
+		<widget name="programpix" position="847,120" size="333,250"/>
+		<widget name="videopix" position="847,387" size="333,200"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/red.svg" position="13,560" size="200,47"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/green.svg" position="213,560" size="200,47"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/yellow.svg" position="413,560" size="200,47"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/blue.svg" position="613,560" size="200,47"/>
+		<widget backgroundColor="#9f1313" font="Regular;20" foregroundColor="white" halign="center" name="key_red" position="13,560" shadowColor="black" shadowOffset="-2,-2" size="200,47" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="#1f771f" font="Regular;20" foregroundColor="white" halign="center" name="key_green" position="213,560" shadowColor="black" shadowOffset="-2,-2" size="200,47" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="#a08500" font="Regular;20" foregroundColor="white" halign="center" name="key_yellow" position="413,560" shadowColor="black" shadowOffset="-2,-2" size="200,47" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="#18188b" font="Regular;20" foregroundColor="white" halign="center" name="key_blue" position="613,560" shadowColor="black" shadowOffset="-2,-2" size="200,47" transparent="1" valign="center" zPosition="1"/>
+	</screen>
+	<screen name="TVCConfigScreen" position="center,73" size="1200,620" title="">
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/red.svg" position="7,3" size="200,47"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/green.svg" position="207,3" size="200,47"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/yellow.svg" position="407,3" size="200,47"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/blue.svg" position="607,3" size="200,47"/>
+		<widget backgroundColor="#f23d21" font="Regular;20" foregroundColor="#ffffff" halign="center" name="key_red" position="7,3" shadowColor="#000000" shadowOffset="-2,-2" size="200,47" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="#389416" font="Regular;20" foregroundColor="#ffffff" halign="center" name="key_green" position="207,3" shadowColor="#000000" shadowOffset="-2,-2" size="200,47" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="#e6bd00" font="Regular;20" foregroundColor="#ffffff" halign="center" name="key_yellow" position="407,3" shadowColor="#000000" shadowOffset="-2,-2" size="200,47" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="#0064c7" font="Regular;20" foregroundColor="#ffffff" halign="center" name="key_blue" position="607,3" shadowColor="#000000" shadowOffset="-2,-2" size="200,47" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;23" halign="right" position="827,0" render="Label" size="267,47" source="global.CurrentTime" valign="center">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<widget font="Regular;23" halign="right" position="1100,0" render="Label" size="80,47" source="global.CurrentTime" valign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<eLabel backgroundColor="#aaaaaa" position="7,53" size="1187,1"/>
+		<widget enableWrapAround="1" itemHeight="30" name="config" position="7,60" scrollbarMode="showOnDemand" size="1187,420"/>
+		<eLabel backgroundColor="#aaaaaa" position="7,487" size="1187,1"/>
+		<widget font="Regular;21" halign="center" position="7,493" render="Label" size="1187,120" source="help" valign="center"/>
+	</screen>
+</skin>

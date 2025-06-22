@@ -1,0 +1,8 @@
+	<screen flags="wfNoBorder" name="ProgramColumns" position="center,center" size="2560,1440">
+		<xmlinc file="screenpart_TitleOnly" source="Title"/>
+		<widget font="Regular;36" halign="right" name="day_selector" position="1987,40" size="533,43" transparent="1" valign="center"/>
+		<xmlinc file="screenpart_Background"/>
+		<xmlinc file="screenpart_ProgramColumnsPrime" position="0,120"/>
+		<xmlinc file="screenpart_ProgramColumnsLists" position="0,400"/>
+		<xmlinc file="screenpart_4Buttons_source" position="0,1373" width="640"/>
+	</screen>

@@ -1,0 +1,30 @@
+	<widget font="Regular;24" foregroundColor="yellow" name="channel0" position="7,76" size="147,61" transparent="1"/>
+	<widget font="Regular;24" foregroundColor="yellow" name="channel1" position="433,76" size="147,61" transparent="1"/>
+	<widget font="Regular;24" foregroundColor="yellow" name="channel2" position="860,76" size="147,61" transparent="1"/>
+	<widget font="Regular;24" foregroundColor="yellow" name="channel3" position="1287,76" size="147,61" transparent="1"/>
+	<widget font="Regular;24" foregroundColor="yellow" name="channel4" position="1713,76" size="147,61" transparent="1"/>
+	<widget font="Regular;24" foregroundColor="yellow" name="channel5" position="2140,76" size="147,61" transparent="1"/>
+	<widget font="Regular;28" foregroundColor="yellow" name="time0" position="7,147" size="127,37" transparent="1"/>
+	<widget font="Regular;28" foregroundColor="yellow" name="time1" position="433,147" size="127,37" transparent="1"/>
+	<widget font="Regular;28" foregroundColor="yellow" name="time2" position="860,147" size="127,37" transparent="1"/>
+	<widget font="Regular;28" foregroundColor="yellow" name="time3" position="1287,147" size="127,37" transparent="1"/>
+	<widget font="Regular;28" foregroundColor="yellow" name="time4" position="1713,147" size="127,37" transparent="1"/>
+	<widget font="Regular;28" foregroundColor="yellow" name="time5" position="2140,147" size="127,37" transparent="1"/>
+	<widget font="Regular;28" foregroundColor="yellow" name="description0" position="7,193" size="413,67" transparent="1"/>
+	<widget font="Regular;28" foregroundColor="yellow" name="description1" position="433,193" size="413,67" transparent="1"/>
+	<widget font="Regular;28" foregroundColor="yellow" name="description2" position="860,193" size="413,67" transparent="1"/>
+	<widget font="Regular;28" foregroundColor="yellow" name="description3" position="1287,193" size="413,67" transparent="1"/>
+	<widget font="Regular;28" foregroundColor="yellow" name="description4" position="1713,193" size="413,67" transparent="1"/>
+	<widget font="Regular;28" foregroundColor="yellow" name="description5" position="2140,193" size="413,67" transparent="1"/>
+	<widget alphatest="on" name="picon0" position="7,0" size="107,64"/>
+	<widget alphatest="on" name="picon1" position="433,0" size="107,64"/>
+	<widget alphatest="on" name="picon2" position="860,0" size="107,64"/>
+	<widget alphatest="on" name="picon3" position="1287,0" size="107,64"/>
+	<widget alphatest="on" name="picon4" position="1713,0" size="107,64"/>
+	<widget alphatest="on" name="picon5" position="2140,0" size="107,64"/>
+	<widget alphatest="on" name="programpix0" position="153,0" size="267,177"/>
+	<widget alphatest="on" name="programpix1" position="581,0" size="267,177"/>
+	<widget alphatest="on" name="programpix2" position="1007,0" size="267,177"/>
+	<widget alphatest="on" name="programpix3" position="1433,0" size="267,177"/>
+	<widget alphatest="on" name="programpix4" position="1860,0" size="267,177"/>
+	<widget alphatest="on" name="programpix5" position="2287,0" size="267,177"/>
