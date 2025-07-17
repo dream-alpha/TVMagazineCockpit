@@ -126,7 +126,7 @@ msgid "License"
 msgstr "Lizenz"
 
 msgid "Cancel"
-msgstr "Abbruch"
+msgstr "Abbrechen"
 
 msgid "Save"
 msgstr "Speichern"

@@ -45,17 +45,16 @@ masterval_com = re.compile(
 data_rel_start_com = re.compile(r'data-rel-start="(.+?)"', re.S)
 data_rel_end_com = re.compile(r'data-rel-end="(.+?)"', re.S)
 data_tracking_point_com = re.compile(
-    r'<span>'                                     # Opening span tag
+    r'<span>'  # Opening span tag
     # URL of the program (urlsendung)
     r'.+?<a href="(?P<url>http.+?html)"'
-    r'.+?saveRef.+?'                              # saveRef function call
+    r'.+?saveRef.+?'  # saveRef function call
     # Title attribute containing full title + subtitle
     r'title="(?P<full_title>.+?)"'
     # Extract raw JSON from data-tracking-point
     r'.+?data-tracking-point=\'(?P<data_tracking_point>.*?)\''
-    r'.+?<strong>(?P<title>.+?)</strong>'        # The display title
-    r'.+?</a>(?P<info>.*?)</span>'                # Additional info after title
-    , re.S
+    r'.+?<strong>(?P<title>.+?)</strong>'  # The display title
+    r'.+?</a>(?P<info>.*?)</span>', re.S  # Additional info after title
 )
 
 # Regex patterns for details page parsing
@@ -156,6 +155,14 @@ def tvs_parse_details(html_data, event):
     sectionidcontent_con_val = sectionidcontent_con_com.search(html_data)
     if not sectionidcontent_con_val:
         sectionidcontent_con_val = sectionidcontent_alt_com.search(html_data)
+    # Generic fallback: if no section found, set all expected fields to defaults and return early
+    if not sectionidcontent_con_val:
+        event[idx['video_url']] = ""
+        event[idx['photo_url']] = ""
+        event[idx['description']] = ""
+        event[idx['subtitle']] = ""
+        return event
+
     # Extract video URL
     event[idx['video_url']] = ""
     xymatic_video_val = xymatic_video_com.search(

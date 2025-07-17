@@ -78,10 +78,7 @@ class Navigation:
         if max_list_index < 0:
             max_list_index = COLS - 1
         self.list_index += 1
-        if (
-            self.list_index > COLS - 1
-            or (self.page_index == self.pages - 1 and self.list_index > max_list_index)
-        ):
+        if (self.list_index > COLS - 1 or (self.page_index == self.pages - 1 and self.list_index > max_list_index)):
             self.list_index = 0
             self.page_index += 1
             if self.page_index > self.pages - 1:
