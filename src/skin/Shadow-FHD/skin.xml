@@ -53,9 +53,9 @@
 	</screen>
 	<screen flags="wfNoBorder" name="EventDetails" position="center,center" size="1800,930">
 		<widget font="Bold;32" noWrap="1" position="20,30" render="Label" size="1760,43" source="Title" transparent="1"/>
-		<ePixmap gradient="#ff000000,#131a1d,vertical" position="0,0" size="1800,418" zPosition="-1"/>
-		<eLabel backgroundColor="#131a1d" position="0,418" size="1800,93" zPosition="-1"/>
-		<ePixmap gradient="#131a1d,#ff000000,vertical" position="0,511" size="1800,418" zPosition="-1"/>
+		<ePixmap gradient="#ff000000,#131a1d,vertical" position="0,0" size="1800,419" zPosition="-1"/>
+		<eLabel backgroundColor="#131a1d" position="0,419" size="1800,93" zPosition="-1"/>
+		<ePixmap gradient="#131a1d,#ff000000,vertical" position="0,512" size="1800,419" zPosition="-1"/>
 		<widget name="picon" position="20,120" size="100,100"/>
 		<widget font="Regular;32" name="title" position="150,120" size="1100,43" transparent="1" valign="center" zPosition="1"/>
 		<widget font="Regular;28" name="subtitle" position="150,175" size="1100,37" transparent="1" valign="center" zPosition="1"/>

@@ -1,6 +1,6 @@
 Description: TVMagazineCockpit
 Maintainer: dream-alpha
 Package: enigma2-plugin-extensions-tvmagazinecockpit
-Version: 3.3.19
+Version: 3.4.4
 Architecture: all
-Depends: enigma2-plugin-skincomponents-extmultilistselection
+Depends: enigma2-plugin-skincomponents-extmultilistselection, enigma2-plugin-skincomponents-cockpit
