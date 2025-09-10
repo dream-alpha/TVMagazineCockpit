@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<skin>
+	<xmlinc file="screen_ProgramColumns"/>
+	<xmlinc file="screen_EventDetails"/>
+	<xmlinc file="screen_ConfigScreen"/>
+</skin>

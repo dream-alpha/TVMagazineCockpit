@@ -1,0 +1,11 @@
+	<screen flags="wfNoBorder" name="EventDetails" position="center,center" size="1800,930">
+		<xmlinc file="screenpart_TitleOnly" source="Title"/>
+		<xmlinc file="screenpart_Background"/>
+		<widget name="picon" position="20,120" size="100,100"/>
+		<widget font="Regular;32" name="title" position="150,120" size="1100,43" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;28" name="subtitle" position="150,175" size="1100,37" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;28" name="duration" position="150,220" size="300,37" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;26" name="description" position="20,280" size="1230,540" transparent="1"/>
+		<xmlinc file="screenpart_EventDetailsPics" position="1270,120"/>
+		<xmlinc file="screenpart_4Buttons_name" position="0,880" width="450"/>
+	</screen>
