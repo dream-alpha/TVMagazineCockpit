@@ -1,0 +1,16 @@
+	<screen name="EventDetails" position="center,110" size="1800,930">
+		<widget name="picon" position="20,20" size="100,100"/>
+		<widget font="Regular;32" name="title" position="150,20" size="1630,43" valign="center" zPosition="1"/>
+		<widget font="Regular;28" name="subtitle" position="150,75" size="1630,37" valign="center" zPosition="1"/>
+		<widget font="Regular;28" name="duration" position="150,120" size="300,37" valign="center" zPosition="1"/>
+		<widget font="Regular;26" name="description" position="20,180" size="1230,520"/>
+		<xmlinc file="screenpart_EventDetailsPics" position="1270,180"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/red.svg" position="20,840" size="300,70"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/green.svg" position="320,840" size="300,70"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/yellow.svg" position="620,840" size="300,70"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/blue.svg" position="920,840" size="300,70"/>
+		<widget backgroundColor="#9f1313" font="Regular;30" foregroundColor="white" halign="center" name="key_red" position="20,840" shadowColor="black" shadowOffset="-2,-2" size="300,70" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="#1f771f" font="Regular;30" foregroundColor="white" halign="center" name="key_green" position="320,840" shadowColor="black" shadowOffset="-2,-2" size="300,70" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="#a08500" font="Regular;30" foregroundColor="white" halign="center" name="key_yellow" position="620,840" shadowColor="black" shadowOffset="-2,-2" size="300,70" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="#18188b" font="Regular;30" foregroundColor="white" halign="center" name="key_blue" position="920,840" shadowColor="black" shadowOffset="-2,-2" size="300,70" transparent="1" valign="center" zPosition="1"/>
+	</screen>

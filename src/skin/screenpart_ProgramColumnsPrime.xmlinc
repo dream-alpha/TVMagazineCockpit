@@ -1,0 +1,30 @@
+	<widget font="Regular;20" foregroundColor="#a6781c" name="channel0" position="5,40" size="290,22"/>
+	<widget font="Regular;20" foregroundColor="#a6781c" name="channel1" position="305,40" size="290,22"/>
+	<widget font="Regular;20" foregroundColor="#a6781c" name="channel2" position="605,40" size="290,22"/>
+	<widget font="Regular;20" foregroundColor="#a6781c" name="channel3" position="905,40" size="290,22"/>
+	<widget font="Regular;20" foregroundColor="#a6781c" name="channel4" position="1205,40" size="290,22"/>
+	<widget font="Regular;20" foregroundColor="#a6781c" name="channel5" position="1505,40" size="290,22"/>
+	<widget font="Regular;15" foregroundColor="#a0a0a0" name="time0" position="5,140" size="40,18"/>
+	<widget font="Regular;15" foregroundColor="#a0a0a0" name="time1" position="300,140" size="40,18"/>
+	<widget font="Regular;15" foregroundColor="#a0a0a0" name="time2" position="600,140" size="40,18"/>
+	<widget font="Regular;15" foregroundColor="#a0a0a0" name="time3" position="900,140" size="40,18"/>
+	<widget font="Regular;15" foregroundColor="#a0a0a0" name="time4" position="1200,140" size="40,18"/>
+	<widget font="Regular;15" foregroundColor="#a0a0a0" name="time5" position="1500,140" size="40,18"/>
+	<widget font="Regular;20" foregroundColor="#a6781c" name="description0" position="0,170" size="300,46"/>
+	<widget font="Regular;20" foregroundColor="#a6781c" name="description1" position="300,170" size="200,46"/>
+	<widget font="Regular;20" foregroundColor="#a6781c" name="description2" position="600,170" size="200,46"/>
+	<widget font="Regular;20" foregroundColor="#a6781c" name="description3" position="900,170" size="200,46"/>
+	<widget font="Regular;20" foregroundColor="#a6781c" name="description4" position="1200,170" size="200,46"/>
+	<widget font="Regular;20" foregroundColor="#a6781c" name="description5" position="1500,170" size="200,46"/>
+	<widget alphatest="on" name="picon0" position="10,70" size="50,50"/>
+	<widget alphatest="on" name="picon1" position="310,70" size="50,50"/>
+	<widget alphatest="on" name="picon2" position="610,70" size="50,50"/>
+	<widget alphatest="on" name="picon3" position="910,70" size="50,50"/>
+	<widget alphatest="on" name="picon4" position="1210,70" size="50,50"/>
+	<widget alphatest="on" name="picon5" position="1510,70" size="50,50"/>
+	<widget alphatest="on" name="programpix0" position="100,65" size="149,99"/>
+	<widget alphatest="on" name="programpix1" position="400,65" size="149,99"/>
+	<widget alphatest="on" name="programpix2" position="700,65" size="149,99"/>
+	<widget alphatest="on" name="programpix3" position="1000,65" size="149,99"/>
+	<widget alphatest="on" name="programpix4" position="1300,65" size="149,99"/>
+	<widget alphatest="on" name="programpix5" position="1600,65" size="149,99"/>

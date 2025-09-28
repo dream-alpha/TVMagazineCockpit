@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<skin>
+	<screen flags="wfNoBorder" name="ProgramColumns" position="center,center" size="2560,1440">
+		<widget font="Bold;43" noWrap="1" position="27,40" render="Label" size="2507,57" source="Title" transparent="1"/>
+		<widget font="Regular;36" halign="right" name="day_selector" position="1987,40" size="533,43" transparent="1" valign="center"/>
+		<ePixmap gradient="#ff000000,#131a1d,vertical" position="0,0" size="2560,648" zPosition="-1"/>
+		<eLabel backgroundColor="#131a1d" position="0,648" size="2560,144" zPosition="-1"/>
+		<ePixmap gradient="#131a1d,#ff000000,vertical" position="0,792" size="2560,648" zPosition="-1"/>
+		<widget font="Regular;24" foregroundColor="yellow" name="channel0" position="7,196" size="147,61" transparent="1"/>
+		<widget font="Regular;24" foregroundColor="yellow" name="channel1" position="433,196" size="147,61" transparent="1"/>
+		<widget font="Regular;24" foregroundColor="yellow" name="channel2" position="860,196" size="147,61" transparent="1"/>
+		<widget font="Regular;24" foregroundColor="yellow" name="channel3" position="1287,196" size="147,61" transparent="1"/>
+		<widget font="Regular;24" foregroundColor="yellow" name="channel4" position="1713,196" size="147,61" transparent="1"/>
+		<widget font="Regular;24" foregroundColor="yellow" name="channel5" position="2140,196" size="147,61" transparent="1"/>
+		<widget font="Regular;28" foregroundColor="yellow" name="time0" position="7,267" size="127,37" transparent="1"/>
+		<widget font="Regular;28" foregroundColor="yellow" name="time1" position="433,267" size="127,37" transparent="1"/>
+		<widget font="Regular;28" foregroundColor="yellow" name="time2" position="860,267" size="127,37" transparent="1"/>
+		<widget font="Regular;28" foregroundColor="yellow" name="time3" position="1287,267" size="127,37" transparent="1"/>
+		<widget font="Regular;28" foregroundColor="yellow" name="time4" position="1713,267" size="127,37" transparent="1"/>
+		<widget font="Regular;28" foregroundColor="yellow" name="time5" position="2140,267" size="127,37" transparent="1"/>
+		<widget font="Regular;28" foregroundColor="yellow" name="description0" position="7,313" size="413,67" transparent="1"/>
+		<widget font="Regular;28" foregroundColor="yellow" name="description1" position="433,313" size="413,67" transparent="1"/>
+		<widget font="Regular;28" foregroundColor="yellow" name="description2" position="860,313" size="413,67" transparent="1"/>
+		<widget font="Regular;28" foregroundColor="yellow" name="description3" position="1287,313" size="413,67" transparent="1"/>
+		<widget font="Regular;28" foregroundColor="yellow" name="description4" position="1713,313" size="413,67" transparent="1"/>
+		<widget font="Regular;28" foregroundColor="yellow" name="description5" position="2140,313" size="413,67" transparent="1"/>
+		<widget alphatest="on" name="picon0" position="7,120" size="107,64"/>
+		<widget alphatest="on" name="picon1" position="433,120" size="107,64"/>
+		<widget alphatest="on" name="picon2" position="860,120" size="107,64"/>
+		<widget alphatest="on" name="picon3" position="1287,120" size="107,64"/>
+		<widget alphatest="on" name="picon4" position="1713,120" size="107,64"/>
+		<widget alphatest="on" name="picon5" position="2140,120" size="107,64"/>
+		<widget alphatest="on" name="programpix0" position="153,120" size="267,177"/>
+		<widget alphatest="on" name="programpix1" position="581,120" size="267,177"/>
+		<widget alphatest="on" name="programpix2" position="1007,120" size="267,177"/>
+		<widget alphatest="on" name="programpix3" position="1433,120" size="267,177"/>
+		<widget alphatest="on" name="programpix4" position="1860,120" size="267,177"/>
+		<widget alphatest="on" name="programpix5" position="2287,120" size="267,177"/>
+		<widget enableWrapAround="1" name="list0" position="0,400" scrollbarMode="showNever" size="426,933" transparent="1"/>
+		<widget enableWrapAround="1" name="list1" position="426,400" scrollbarMode="showNever" size="426,933" transparent="1"/>
+		<widget enableWrapAround="1" name="list2" position="852,400" scrollbarMode="showNever" size="426,933" transparent="1"/>
+		<widget enableWrapAround="1" name="list3" position="1278,400" scrollbarMode="showNever" size="426,933" transparent="1"/>
+		<widget enableWrapAround="1" name="list4" position="1704,400" scrollbarMode="showNever" size="426,933" transparent="1"/>
+		<widget enableWrapAround="1" name="list5" position="2130,400" scrollbarMode="showNever" size="426,933" transparent="1"/>
+		<widget font="Regular;35" halign="center" position="0,1373" render="Label" size="640,47" source="key_red" transparent="1"/>
+		<widget font="Regular;35" halign="center" position="640,1373" render="Label" size="640,47" source="key_green" transparent="1"/>
+		<widget font="Regular;35" halign="center" position="1280,1373" render="Label" size="640,47" source="key_yellow" transparent="1"/>
+		<widget font="Regular;35" halign="center" position="1920,1373" render="Label" size="640,47" source="key_blue" transparent="1"/>
+		<eLabel backgroundColor="#ff0000" position="0,1426" size="640,13"/>
+		<eLabel backgroundColor="#669900" position="640,1426" size="640,13"/>
+		<eLabel backgroundColor="#e5b243" position="1280,1426" size="640,13"/>
+		<eLabel backgroundColor="#3366cc" position="1920,1426" size="640,13"/>
+	</screen>
+	<screen flags="wfNoBorder" name="EventDetails" position="center,center" size="2400,1240">
+		<widget font="Bold;43" noWrap="1" position="27,40" render="Label" size="2347,57" source="Title" transparent="1"/>
+		<ePixmap gradient="#ff000000,#131a1d,vertical" position="0,0" size="2400,558" zPosition="-1"/>
+		<eLabel backgroundColor="#131a1d" position="0,558" size="2400,124" zPosition="-1"/>
+		<ePixmap gradient="#131a1d,#ff000000,vertical" position="0,682" size="2400,558" zPosition="-1"/>
+		<widget name="picon" position="27,160" size="133,133"/>
+		<widget font="Regular;43" name="title" position="200,160" size="1467,57" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;37" name="subtitle" position="200,233" size="1467,49" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;37" name="duration" position="200,293" size="400,49" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;35" name="description" position="27,373" size="1640,720" transparent="1"/>
+		<widget name="programpix" position="1693,160" size="667,500"/>
+		<widget name="videopix" position="1693,693" size="667,400"/>
+		<widget font="Regular;35" halign="center" name="key_red" position="0,1173" size="600,47" transparent="1"/>
+		<widget font="Regular;35" halign="center" name="key_green" position="600,1173" size="600,47" transparent="1"/>
+		<widget font="Regular;35" halign="center" name="key_yellow" position="1200,1173" size="600,47" transparent="1"/>
+		<widget font="Regular;35" halign="center" name="key_blue" position="1800,1173" size="600,47" transparent="1"/>
+		<eLabel backgroundColor="#ff0000" position="0,1226" size="600,13"/>
+		<eLabel backgroundColor="#669900" position="600,1226" size="600,13"/>
+		<eLabel backgroundColor="#e5b243" position="1200,1226" size="600,13"/>
+		<eLabel backgroundColor="#3366cc" position="1800,1226" size="600,13"/>
+	</screen>
+	<screen backgroundColor="#000000" flags="wfNoBorder" name="TVCConfigScreen" position="0,center" size="1600,1440">
+		<ePixmap gradient="#ff000000,#131a1d,vertical" position="0,0" size="1600,648" zPosition="-1"/>
+		<eLabel backgroundColor="#131a1d" position="0,648" size="1600,144" zPosition="-1"/>
+		<ePixmap gradient="#131a1d,#ff000000,vertical" position="0,792" size="1600,648" zPosition="-1"/>
+		<widget font="Bold;43" noWrap="1" position="27,40" render="Label" size="1547,57" source="Title" transparent="1"/>
+		<widget enableWrapAround="1" itemHeight="60" name="config" position="27,120" scrollbarMode="showOnDemand" size="1547,1020" transparent="1"/>
+		<widget font="Regular;40" halign="center" position="27,1173" render="Label" size="1547,160" source="help" transparent="1" valign="center"/>
+		<widget font="Regular;35" halign="center" name="key_red" position="0,1373" size="400,47" transparent="1"/>
+		<widget font="Regular;35" halign="center" name="key_green" position="400,1373" size="400,47" transparent="1"/>
+		<widget font="Regular;35" halign="center" name="key_yellow" position="800,1373" size="400,47" transparent="1"/>
+		<widget font="Regular;35" halign="center" name="key_blue" position="1200,1373" size="400,47" transparent="1"/>
+		<eLabel backgroundColor="#ff0000" position="0,1426" size="400,13"/>
+		<eLabel backgroundColor="#669900" position="400,1426" size="400,13"/>
+		<eLabel backgroundColor="#e5b243" position="800,1426" size="400,13"/>
+		<eLabel backgroundColor="#3366cc" position="1200,1426" size="400,13"/>
+	</screen>
+</skin>

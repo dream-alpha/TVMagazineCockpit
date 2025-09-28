@@ -1,0 +1,6 @@
+	<screen name="ProgramColumns" position="center,center" size="1800,930">
+		<xmlinc file="screenpart_ProgramColumnsButtons"/>
+		<widget font="Regular;25" halign="right" name="day_selector" position="1430,5" size="350,30" transparent="1" valign="center"/>
+		<xmlinc file="screenpart_ProgramColumnsPrime"/>
+		<xmlinc file="screenpart_ProgramColumnsLists" position="0,220"/>
+	</screen>
